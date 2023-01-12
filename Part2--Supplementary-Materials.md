@@ -1,8 +1,8 @@
 Using Small Multiples to visualise the effect of the coronavirus
-pandemic
+pandemic (Part 2)
 ================
 Alex Reppel
-30 August 2020
+30 August 2020, last updated 15 February 2021
 
 # Introduction
 
@@ -10,11 +10,9 @@ In the previous part of this series, we learned that [small
 multiples](https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hv)
 are particularly useful to present large amounts of information
 “**compactly** and in a **consistently comparable way**” (Healy 2019,
-76, emphasis added).
-
-In this follow-up, I am going to demonstrate how to create a small
-multiple using [R](https://www.r-project.org/) and the **ggplot2**
-library (Wickham 2016).
+76, emphasis added). In this follow-up, I am going to demonstrate how to
+create a small multiple using [R](https://www.r-project.org/) and the
+**ggplot2** library (Wickham 2016).
 
 At the beginning of the 2020 coronavirus pandemic, small multiples were
 frequently used to visualise the impact the pandemic had in different
@@ -61,15 +59,13 @@ Burn-Murdock. (Source: Financial Times.)</figcaption>
 ## Aim
 
 Collecting mortality data across countries is difficult and we are not
-attempting to replicate that in this exercise.
-
-Instead, we will create a small multiple that compares *mortality rates*
-for England and Wales across different age groups using
-[R](https://www.r-project.org/) and the **ggplot2** library (Wickham
-2016). As an additional challenge, my aim is to reproduce some of the
-aesthetics, as well as the overall visual appeal of [John
-Burn-Murdock](https://twitter.com/jburnmurdoch)’s small multiple of
-[mortality rates for different
+attempting to replicate that in this exercise. Instead, we will create a
+small multiple that compares *mortality rates* for England and Wales
+across different age groups using [R](https://www.r-project.org/) and
+the **ggplot2** library (Wickham 2016). As an additional challenge, my
+aim is to reproduce some of the aesthetics, as well as the overall
+visual appeal of [John Burn-Murdock](https://twitter.com/jburnmurdoch)’s
+small multiple of [mortality rates for different
 countries](https://www.ft.com/content/a2901ce8-5eb7-4633-b89c-cbdf5b386938).
 
 ## Acknowledgements

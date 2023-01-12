@@ -1,8 +1,8 @@
 ---
-title: "Using Small Multiples to visualise the effect of the coronavirus pandemic"
-subtitle: "Part 2: Supplementary materials for a data visualisation tutorial"
+title: "Using Small Multiples to visualise the effect of the coronavirus pandemic (Part 2)"
+subtitle: "Supplementary materials for a data visualisation tutorial"
 author: "Alex Reppel"
-date: "30 August 2020"
+date: "30 August 2020, last updated 15 February 2021"
 bibliography: references.bib
 output: github_document
 ---
@@ -21,9 +21,7 @@ knitr::opts_chunk$set(
 
 # Introduction
 
-In the previous part of this series, we learned that [small multiples](https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hv) are particularly useful to present large amounts of information "**compactly** and in a **consistently comparable way**" [@Healy:2019aa, 76, emphasis added].
-
-In this follow-up, I am going to demonstrate how to create a small multiple using [R](https://www.r-project.org/) and the **ggplot2** library [@Wickham:2016aa].
+In the previous part of this series, we learned that [small multiples](https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hv) are particularly useful to present large amounts of information "**compactly** and in a **consistently comparable way**" [@Healy:2019aa, 76, emphasis added]. In this follow-up, I am going to demonstrate how to create a small multiple using [R](https://www.r-project.org/) and the **ggplot2** library [@Wickham:2016aa].
 
 At the beginning of the 2020 coronavirus pandemic, small multiples were frequently used to visualise the impact the pandemic had in different countries. Below is a collection of examples from (top left to bottom right): The [BBC](https://www.bbc.com/news/world-51235105), [The Guardian](https://www.theguardian.com/world/2020/jul/30/covid-19-england-had-highest-excess-death-levels-in-europe-by-end-of-may), [The Financial Times](https://www.ft.com/content/a2901ce8-5eb7-4633-b89c-cbdf5b386938), [The Scottish Parliament](https://spice-spotlight.scot/2020/06/19/excess-deaths-in-scotland/), [The Times](https://www.thetimes.co.uk/article/curfew-threat-to-stop-virus-bwnst6nrq), and the [ONS](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsregisteredweeklyinenglandandwalesprovisional/weekending14august2020).
 
@@ -38,11 +36,10 @@ Several of these examples compare *mortality rates* across countries. One of the
 
 ![FT analysis of mortality rates by John Burn-Murdock. (Source: Financial Times.)](assets/img/inspiration.png){width=75%}
 
+
 ## Aim
 
-Collecting mortality data across countries is difficult and we are not attempting to replicate that in this exercise.
-
-Instead, we will create a small multiple that compares *mortality rates* for England and Wales across different age groups using [R](https://www.r-project.org/) and the **ggplot2** library [@Wickham:2016aa]. As an additional challenge, my aim is to reproduce some of the aesthetics, as well as the overall visual appeal of [John Burn-Murdock](https://twitter.com/jburnmurdoch)'s small multiple of [mortality rates for different countries](https://www.ft.com/content/a2901ce8-5eb7-4633-b89c-cbdf5b386938).
+Collecting mortality data across countries is difficult and we are not attempting to replicate that in this exercise. Instead, we will create a small multiple that compares *mortality rates* for England and Wales across different age groups using [R](https://www.r-project.org/) and the **ggplot2** library [@Wickham:2016aa]. As an additional challenge, my aim is to reproduce some of the aesthetics, as well as the overall visual appeal of [John Burn-Murdock](https://twitter.com/jburnmurdoch)'s small multiple of [mortality rates for different countries](https://www.ft.com/content/a2901ce8-5eb7-4633-b89c-cbdf5b386938).
 
 
 ## Acknowledgements
