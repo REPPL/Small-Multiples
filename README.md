@@ -2,8 +2,8 @@
 
 My first attempts learning **R** and **ggplot2**. These materials were produced for a video tutorial and consists of two parts:
 
-1. A [script](Part1--Annotated-Script.md)
-2. [Supplementary materials](Part2--Supplementary-Materials.md)
+1. A [script](Part1--Annotated-Script.md) for the video tutorial
+2. [Supplementary materials](Part2--Supplementary-Materials.md), incl. a step-by-step guide to create a small multiple in ggplot
 
 The inspiration for this project was the FT analysis of mortality rates by John Burn-Murdock.
 
